@@ -1,4 +1,4 @@
-CrystalReports2011Runtime.x86
+CrystalReports2011Runtime
 =============================
 
-Chocolatey package for Crystal Reports 2011 x86 Runtime
+Chocolatey package for Crystal Reports 2011 Runtime
