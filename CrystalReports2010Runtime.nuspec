@@ -4,7 +4,7 @@
     <id>CrystalReports2010Runtime</id>
     <version>13.0.10</version>
     <title>Crystal Reports 2010 Runtime</title>
-    <authors>Microsoft</authors>
+    <authors>SAP</authors>
     <owners>Peter Gill</owners>
     <projectUrl>http://scn.sap.com/docs/DOC-7824</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
