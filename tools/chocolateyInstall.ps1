@@ -5,8 +5,8 @@ try {
     packageName = $package;
     fileType = 'msi';
     silentArgs = '/quiet';
-    url = 'http://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_10.msi';
-    url64bit = 'http://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_10.msi';
+    url = 'http://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_14.msi';
+    url64bit = 'http://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_14.msi';
   }
 
   Install-ChocolateyPackage @params
