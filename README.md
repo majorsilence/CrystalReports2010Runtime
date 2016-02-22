@@ -1,4 +1,4 @@
-CrystalReports2011Runtime
+CrystalReports2010Runtime
 =============================
 
-Chocolatey package for Crystal Reports 2011 Runtime
+Chocolatey package for Crystal Reports 2010 Runtime
