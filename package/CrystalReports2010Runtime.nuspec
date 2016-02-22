@@ -1,8 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>CrystalReports2010Runtime</id>
-    <version>13.0.14.1720</version>
+    <version>13.0.16.1954</version>
     <title>Crystal Reports 2010 Runtime</title>
     <authors>SAP</authors>
     <owners>Peter Gill</owners>
@@ -16,3 +16,4 @@
     <tags>Crystal Reports SAP CrystalReports .NET</tags>
   </metadata>
 </package>
+<!-- character encoding: “UTF-8” -->
