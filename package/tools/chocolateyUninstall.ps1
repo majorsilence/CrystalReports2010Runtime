@@ -4,13 +4,6 @@ $msiId64 = '{9EFF1F10-990C-4DE8-A4C7-7EEE1952F159}'
 
 $package = 'CrystalReports2010Runtime'
 
-try {
-  
-  if ([IntPtr]::Size -eq 8) { Uninstall-ChocolateyPackage $package 'MSI' -SilentArgs "$msiId64 /qb" -validExitCodes @(0) }
-  else { Uninstall-ChocolateyPackage $package 'MSI' -SilentArgs "$msiId /qb" -validExitCodes @(0) }
-  # the following is all part of error handling
-  Write-ChocolateySuccess $package
-} catch {
-  Write-ChocolateyFailure $package "$($_.Exception.Message)"
-  throw 
-}
+if ([IntPtr]::Size -eq 8) { Uninstall-ChocolateyPackage $package 'MSI' -SilentArgs "$msiId64 /qb" -validExitCodes @(0) }
+else { Uninstall-ChocolateyPackage $package 'MSI' -SilentArgs "$msiId /qb" -validExitCodes @(0) }
+
