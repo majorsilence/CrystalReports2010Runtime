@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>CrystalReports2010Runtime</id>
-    <version>13.0.17.2096</version>
+    <version>13.0.18.2192</version>
     <title>Crystal Reports 2010 Runtime</title>
     <authors>SAP</authors>
     <owners>Peter Gill</owners>
