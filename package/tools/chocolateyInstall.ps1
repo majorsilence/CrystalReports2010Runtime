@@ -4,8 +4,8 @@ $params = @{
   packageName = $package;
   fileType = 'msi';
   silentArgs = '/quiet';
-  url = 'http://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_16.msi';
-  url64bit = 'http://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_16.msi';
+  url = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_18.msi';
+  url64bit = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_18.msi';
 }
 
 Install-ChocolateyPackage @params
@@ -17,6 +17,6 @@ $IsSytem32Bit = (($Env:PROCESSOR_ARCHITECTURE -eq 'x86') -and `
   ($Env:PROCESSOR_ARCHITEW6432 -eq $null))
 if (!$IsSytem32Bit)
 {
-  $params.url64bit = $params.url
-  Install-ChocolateyPackage @params
+  $params.url64bit = $params.url  
 }
+Install-ChocolateyPackage @params
