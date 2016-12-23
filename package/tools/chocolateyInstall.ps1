@@ -6,6 +6,11 @@ $params = @{
   silentArgs = '/quiet';
   url = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_18.msi';
   url64bit = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_18.msi';
+
+  checksum = '1B2C9CF1B3B7B2E2719DAEB0887537C82E1500C326F3BAE7C65CF216B7C3C6CD';
+  checksumType = 'sha256';
+  checksum64 = 'D74B614C5FCE4B01319F6CB612C490BBE7E7F964B6659A116C7864E2810F7802';
+  checksumType64 = 'sha256';
 }
 
 Install-ChocolateyPackage @params
