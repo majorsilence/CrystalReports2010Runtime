@@ -2,11 +2,11 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>CrystalReports2010Runtime</id>
-    <version>13.0.18</version>
+    <version>13.0.19.2312</version>
     <title>Crystal Reports 2010 Runtime</title>
     <authors>SAP</authors>
     <owners>Peter Gill</owners>
-    <projectUrl>http://scn.sap.com/docs/DOC-7824</projectUrl>
+    <projectUrl>https://wiki.scn.sap.com/wiki/display/BOBJ/Crystal+Reports%2C+Developer+for+Visual+Studio+Downloads</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Crystal Reports is a business intelligence application, currently marketed to small businesses by SAP SE. It is used to design and generate reports from a wide range of data sources.</description>
     <summary>Crystal Reports 2010 Runtime
