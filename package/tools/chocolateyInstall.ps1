@@ -4,12 +4,12 @@ $params = @{
   packageName = $package;
   fileType = 'msi';
   silentArgs = '/quiet';
-  url = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_18.msi';
-  url64bit = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_18.msi';
+  url = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_19.msi';
+  url64bit = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_19.msi';
 
-  checksum = '1B2C9CF1B3B7B2E2719DAEB0887537C82E1500C326F3BAE7C65CF216B7C3C6CD';
+  checksum = '86D96458C43A5129009B1140A95E478EC4038CD773EB5E8DC08638FFCC34E09F';
   checksumType = 'sha256';
-  checksum64 = 'D74B614C5FCE4B01319F6CB612C490BBE7E7F964B6659A116C7864E2810F7802';
+  checksum64 = '5FF909AA0C4D122303A4709DDBB5628DF223955B17DF2F9A4928DAF11721D7B2';
   checksumType64 = 'sha256';
 }
 
@@ -22,6 +22,6 @@ $IsSytem32Bit = (($Env:PROCESSOR_ARCHITECTURE -eq 'x86') -and `
   ($Env:PROCESSOR_ARCHITEW6432 -eq $null))
 if (!$IsSytem32Bit)
 {
-  $params.url64bit = $params.url  
+  $params.url64bit = $params.url
 }
 Install-ChocolateyPackage @params
