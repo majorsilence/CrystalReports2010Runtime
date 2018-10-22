@@ -4,12 +4,12 @@ $params = @{
   packageName = $package;
   fileType = 'msi';
   silentArgs = '/quiet';
-  url = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_22.msi';
-  url64bit = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_22.msi';
+  url = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_23.msi';
+  url64bit = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_23.msi';
 
-  checksum = '48AFFA324E1C95D2140C39818E3DFDDE581D7DD1D98F97AA3F13B957D800FCD9';
+  checksum = '5efe6e0b0dc6cfe11f658c7a24cc5556f509dac8474c45071b83c7583dac5ffc';
   checksumType = 'sha256';
-  checksum64 = '4988ED1E3B1672A6C785F54A5CF8246DE97FAC4A058F5C9EB6E97213BB78723D';
+  checksum64 = '84d4e33822891a19585a1eba652716daf9dfb1bcd35557e07bb4ad24bd866c71';
   checksumType64 = 'sha256';
 }
 
