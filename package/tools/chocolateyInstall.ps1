@@ -5,8 +5,8 @@ $params = @{
   packageName = $package;
   fileType = 'msi';
   silentArgs = '/quiet';
-  url = 'https://origin-az.softwaredownloads.sap.com/public/file/0020000001649922022';
-  url64bit = 'https://origin-az.softwaredownloads.sap.com/public/file/0020000001649962022';
+  url = 'https://origin.softwaredownloads.sap.com/public/file/0020000001649922022';
+  url64bit = 'https://origin.softwaredownloads.sap.com/public/file/0020000001649962022';
 
   checksum = '1E45411FEAE93DD98DF95476CE8F74A0495D2C4057F5AD20061D1239223360AB';
   checksumType = 'sha256';
