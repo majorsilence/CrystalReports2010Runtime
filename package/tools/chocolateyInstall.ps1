@@ -1,15 +1,16 @@
 $package = 'CrystalReports2010Runtime'
 
+# SP 33
 $params = @{
   packageName = $package;
   fileType = 'msi';
   silentArgs = '/quiet';
-  url = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_32bit_13_0_23.msi';
-  url64bit = 'https://downloads.businessobjects.com/akdlm/crnetruntime/clickonce/CRRuntime_64bit_13_0_23.msi';
+  url = 'https://origin-az.softwaredownloads.sap.com/public/file/0020000001649922022';
+  url64bit = 'https://origin-az.softwaredownloads.sap.com/public/file/0020000001649962022';
 
-  checksum = '5efe6e0b0dc6cfe11f658c7a24cc5556f509dac8474c45071b83c7583dac5ffc';
+  checksum = '1E45411FEAE93DD98DF95476CE8F74A0495D2C4057F5AD20061D1239223360AB';
   checksumType = 'sha256';
-  checksum64 = '84d4e33822891a19585a1eba652716daf9dfb1bcd35557e07bb4ad24bd866c71';
+  checksum64 = 'DF193303F798D5800D7EEF23F40FDBDADC6E9DA6B34B010E7C2FA9AD396262DC';
   checksumType64 = 'sha256';
 }
 
