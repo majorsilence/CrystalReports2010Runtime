@@ -1,28 +1,40 @@
 $package = 'CrystalReports2010Runtime'
 
-# SP 36
-$params = @{
-  packageName = $package;
-  fileType = 'msi';
-  silentArgs = '/quiet';
-  url = 'https://origin.softwaredownloads.sap.com/public/file/0020000000638692024';
-  url64bit = 'https://origin.softwaredownloads.sap.com/public/file/0020000000638682024';
+$url32 = 'https://origin.softwaredownloads.sap.com/public/file/0020000000638692024'
+$url64 = 'https://origin.softwaredownloads.sap.com/public/file/0020000000638682024'
+$fileName32 = 'CR13SP36MSI32_0-80007712.msi'
+$fileName64 = 'CR13SP36MSI64_0-80007712.msi'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$filePath32 = Join-Path $toolsDir $fileName32
+$filePath64 = Join-Path $toolsDir $fileName64
 
-  checksum = 'A78D7288E4C01C081FD200F148873DCAC1717435A9178BB104D6995BEEC56020';
-  checksumType = 'sha256';
-  checksum64 = '55DFD84FF0AFBBE20B4782BE3883093DC927F165E9335704367575420F8DC210';
-  checksumType64 = 'sha256';
+# Download and install the 32-bit version
+$packageArgs32 = @{
+    packageName    = $package
+    fileType       = 'msi'
+    url            = $url32
+    file           = $filePath32
+    checksum       = 'A78D7288E4C01C081FD200F148873DCAC1717435A9178BB104D6995BEEC56020'
+    checksumType   = 'sha256' 
+    silentArgs     = '/quiet /norestart'
+    validExitCodes = @(0, 3010, 1641)
 }
 
-Install-ChocolateyPackage @params
+Get-ChocolateyWebFile @packageArgs32
+Install-ChocolateyInstallPackage @packageArgs32
 
-# http://forums.iis.net/p/1174672/1968094.aspx
-# it turns out that even on x64, x86 clr types should also be installed
-# or SMO breaks
-$IsSytem32Bit = (($Env:PROCESSOR_ARCHITECTURE -eq 'x86') -and `
-  ($Env:PROCESSOR_ARCHITEW6432 -eq $null))
-if (!$IsSytem32Bit)
-{
-  $params.url64bit = $params.url
+# Download and install the 64-bit version
+$packageArgs64 = @{
+    packageName    = $package
+    fileType       = 'msi'
+    url            = $url64
+    file           = $filePath64
+    checksum       = '55DFD84FF0AFBBE20B4782BE3883093DC927F165E9335704367575420F8DC210'  
+    checksumType   = 'sha256'  
+    silentArgs     = '/quiet /norestart'
+    validExitCodes = @(0, 3010, 1641)
 }
-Install-ChocolateyPackage @params
+
+Get-ChocolateyWebFile @packageArgs64
+Install-ChocolateyInstallPackage @packageArgs64
+
