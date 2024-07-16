@@ -8,7 +8,9 @@
     <owners>Peter Gill</owners>
     <projectUrl>https://wiki.scn.sap.com/wiki/display/BOBJ/Crystal+Reports%2C+Developer+for+Visual+Studio+Downloads</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Crystal Reports is a business intelligence application, currently marketed to small businesses by SAP SE. It is used to design and generate reports from a wide range of data sources.</description>
+    <description>Installs the Crystal Reports Runtime MSI (both 32-bit and 64-bit).  
+    Crystal Reports is a business intelligence application, currently marketed to small businesses by SAP SE.
+    It is used to design and generate reports from a wide range of data sources.</description>
     <summary>Crystal Reports 2010 Runtime
 
       Crystal Reports allows users to graphically design data connection(s) and report layout.</summary>
